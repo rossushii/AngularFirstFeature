@@ -1,0 +1,8 @@
+<div class="blog-item">
+    <h2>{{ blog!.title }}</h2>
+    <p>Author: {{ blog!.author }}</p>
+    <p>{{ blog!.description }}</p>
+    <ul *ngIf="blog!.comments && blog!.comments.length">
+      <li *ngFor="let comment of blog.comments">{{ comment }}</li>
+    </ul>
+  </div>

@@ -1,0 +1,9 @@
+<div class="book-item">
+  <h2>{{ book?.name }}</h2>
+  <p>Authors: {{ book?.authors?.join(', ') }}</p>
+  <p>ISBN: {{ book?.isbn }}</p>
+  <!-- Edit button -->
+  <button (click)="editBook()">Edit</button>
+  <!-- Delete button -->
+  <button (click)="deleteBook()">Delete</button>
+</div>
